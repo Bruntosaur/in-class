@@ -67,3 +67,19 @@ class Ball {
     circle(this.x, this.y, this.r * 2);
   }
 }
+
+class BubblyBall extends Ball {
+  respond(active) {
+    super.respond(active);
+    this.changeSize(7);
+  }
+}
+
+class EmojiBall extends Ball {
+  show() {
+    textAlign(CENTER, CENTER);
+    textSize(this.r);
+    fill(255);
+    text(":)", this.x, this.y);
+  }
+}
