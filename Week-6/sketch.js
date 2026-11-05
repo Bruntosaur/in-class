@@ -3,7 +3,7 @@ let balls = [];
 // numBalls is written in camelCase.
 // you could also write in camel_case
 // this is the number of balls that you want to create.
-let numBalls = 10000;
+let numBalls = 3000;
 // no color variables, no position variables, they are all defined within the class.
 
 let bodySegmentation;
@@ -15,7 +15,7 @@ let options = {
 };
 
 async function setup() {
-  createCanvas(1280, 960);
+  createCanvas(800, 600);
   for (let i = 0; i < numBalls; i++) {
     balls.push(createRandomBall());
   }
